@@ -11,7 +11,7 @@ weights = "2,5,1,3" # You can change these.
 # Knapsack total capacity
 capacity = 10
 
-
+# ALGORITHM
 def fractional_knapsack(values, weights, capacity):
     # index = [0, 1, 2, ..., n - 1] for n items
     index = list(range(len(values)))
