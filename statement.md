@@ -2,11 +2,11 @@
 
 # Values
 values = "10,3,4,7" # You can change these.
-values = [int(v) for v in values.split(',')]
+
 
 # Weights
 weights = "2,5,1,3" # You can change these.
-weights = [int(w) for w in weights.split(',')]
+
 
 # Knapsack total capacity
 capacity = 10
@@ -41,8 +41,13 @@ def fractional_knapsack(values, weights, capacity):
 
     return max_value, fractions
 
+# Process inputs
+values = [int(v) for v in values.split(',')]
+weights = [int(w) for w in weights.split(',')]
+
 # FUNCTION CALL
 max_value, fractions = fractional_knapsack(values, weights, capacity)
 
+# Output
 print('Total value that can be carried:', max_value)
 print('Fractions by which to multiply the items:', fractions)
